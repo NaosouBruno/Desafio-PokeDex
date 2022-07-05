@@ -16,5 +16,11 @@
     "name": "pikachu",
     "img": "/assets/img/pikachu.png",
     "type": "Electric"
+  },
+  {
+    "id": 3,
+    "name": "pikachu2",
+    "img": "/assets/img/pikachu.png",
+    "type": "Electric"
   }
 ]
