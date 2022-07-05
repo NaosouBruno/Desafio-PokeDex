@@ -2,19 +2,19 @@
   {
     "id": 0,
     "name": "Bulbasaur",
-    "img": "/assets/bulba.png",
+    "img": "/assets/img/bulba.png",
     "type": "Grass"
   },
   {
     "id": 1,
     "name": "Charmander",
-    "img": "/assets/dragao.png",
+    "img": "/assets/img/dragao.png",
     "type": "Fire"
   },
   {
     "id": 2,
     "name": "pikachu",
-    "img": "/assets/bulba.png",
+    "img": "/assets/img/pikachu.png",
     "type": "Electric"
   }
 ]
