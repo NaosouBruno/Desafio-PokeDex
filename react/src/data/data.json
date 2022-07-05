@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Bulbasaur",
+    "img": "/assets/bulba.png"
+  },
+  {
+    "name": "Charmander",
+    "img": "/assets/dragao.png"
+  },
+  {
+    "name": "pikachu",
+    "img": "/assets/bulba.png"
+  }
+]
