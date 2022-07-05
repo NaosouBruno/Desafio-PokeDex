@@ -1,8 +1,8 @@
-import HelloWord from "./components/atoms/helloWord";
+import ListPokedex from "./components/organisms/listPokedex/listPokedex";
 function App() {
   return (
     <div>
-      <HelloWord />
+      <ListPokedex />
     </div>
   );
 }
