@@ -11,8 +11,8 @@ export default function listPokedex() {
     <section>
       <h1>POKEDEX</h1>
       <CardPokemon dados={PokemonsList} />
-      <BurguerMenu />
       {showBurguer && <BurguerContent />}
+      <BurguerMenu />
     </section>
   );
 }
