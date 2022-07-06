@@ -3,10 +3,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+
   &-card {
     width: 155px;
     height: 110px;
-
+    margin-bottom: 10px;
     background: linear-gradient(8.46deg, #46a487 -0.58%, #46d7ab 108.38%);
     border-radius: 15px;
     display: flex;

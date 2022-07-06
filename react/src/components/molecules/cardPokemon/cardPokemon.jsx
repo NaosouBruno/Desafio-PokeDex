@@ -8,7 +8,9 @@ export default function listPokedex(props) {
             <h2>{dado.name}</h2>
             <span>{dado.type}</span>
           </section>
-          <img className="container-imgPoke" src={dado.img} />
+          <div>
+            <img className="container-imgPoke" src={dado.img} />
+          </div>
         </div>
       ))}
     </section>
