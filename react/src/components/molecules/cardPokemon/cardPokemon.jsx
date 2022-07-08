@@ -6,7 +6,6 @@ export default function listPokedex(props) {
   useEffect(() => {
     const fetch = async () => {
       const pokes = await getData();
-      console.log(pokes);
       setPokemons(pokes);
     };
 
@@ -16,12 +15,15 @@ export default function listPokedex(props) {
   const maped = pokemons.map((poke) => (
     <li key={poke.id}>
       {poke.name}{" "}
-      <img src={poke.img.sprites.other["official-artwork"].front_default} />
+      <img
+        className="pokeList-pokeImg"
+        src={poke.img.sprites.other["official-artwork"].front_default}
+      />
     </li>
   ));
   return (
     <section className="container">
-      <ul>{maped}</ul>
+      <ul className="pokeList">{maped}</ul>
     </section>
   );
 }
