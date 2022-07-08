@@ -10,7 +10,7 @@ export default function listPokedex() {
   return (
     <section>
       <h1>POKEDEX</h1>
-      <CardPokemon dados={PokemonsList} />
+      <CardPokemon />
       {showBurguer && <BurguerContent />}
       <BurguerMenu />
     </section>
