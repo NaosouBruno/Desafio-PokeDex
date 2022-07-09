@@ -11,10 +11,12 @@ export default function burguerMenu() {
     dispath(burguerAction.toggle());
   };
   return (
-    <button onClick={toggleBurguerHandler} className="burguer">
-      <span>
-        <img src={burguerIcon} />
-      </span>
-    </button>
+    <div className="burguer">
+      <button onClick={toggleBurguerHandler} className="burguer-container">
+        <span>
+          <img src={burguerIcon} />
+        </span>
+      </button>
+    </div>
   );
 }
