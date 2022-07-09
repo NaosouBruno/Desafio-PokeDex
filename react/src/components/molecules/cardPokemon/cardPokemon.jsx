@@ -15,7 +15,7 @@ export default function listPokedex(props) {
   }, []);
 
   const maped = pokemons.map((poke) => (
-    <li key={poke.id}>
+    <li key={poke.id} className="pokeList-pokeItem">
       <div className="btnContainer">
         <div className="btn__card">
           <div>{poke.type["move-damage-class"]}</div>
