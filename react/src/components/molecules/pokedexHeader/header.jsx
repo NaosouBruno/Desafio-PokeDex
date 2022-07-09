@@ -6,10 +6,10 @@ export default function headerPokedex() {
   return (
     <section>
       <div className="header">
-        <img src={Back} />
-        <img src={ListIcon} />
+        <img className="header-icon" src={Back} />
+        <img className="header-icon" src={ListIcon} />
       </div>
-      <h1>POKEDEX</h1>
+      <h2 className="header-title">Pokedex</h2>
     </section>
   );
 }
