@@ -1,15 +1,12 @@
-import Back from "/assets/img/back.png";
-import ListIcon from "/assets/img/list.png";
-
 import "./header.scss";
-export default function headerPokedex() {
+export default function headerPokedex(props) {
   return (
     <section>
       <div className="header">
-        <img className="header-icon" src={Back} />
-        <img className="header-icon" src={ListIcon} />
+        <img className="header-icon" src={props.leftImg} />
+        <img className="header-icon" src={props.hightImg} />
       </div>
-      <h2 className="header-title">Pokedex</h2>
+      <h2 className="header-title">{props.title}</h2>
     </section>
   );
 }
