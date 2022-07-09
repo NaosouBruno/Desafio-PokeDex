@@ -4,12 +4,12 @@ import BurguerContent from "../../molecules/burguerContent/burguerContent";
 import BurguerMenu from "../../molecules/burguerButton/burguerMenu";
 
 import CardPokemon from "../../molecules/cardPokemon/cardPokemon";
-import PokemonsList from "../../../data/data.json";
+import HeaderPokedex from "../../molecules/pokedexHeader/header";
 export default function listPokedex() {
   const showBurguer = useSelector((state) => state.ui.burguerIsVisible);
   return (
     <section>
-      <h1>POKEDEX</h1>
+      <HeaderPokedex />
       <CardPokemon />
       {showBurguer && <BurguerContent />}
       <BurguerMenu />

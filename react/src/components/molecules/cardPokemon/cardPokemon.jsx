@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import getData from "../../../services/getData";
 import "./index.scss";
 
-import card from "../../../../public/svg/card.svg";
 export default function listPokedex(props) {
   const [pokemons, setPokemons] = useState([]);
   useEffect(() => {
