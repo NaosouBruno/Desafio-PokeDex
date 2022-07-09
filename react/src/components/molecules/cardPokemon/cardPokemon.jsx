@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
 import getData from "../../../services/getData";
 import "./index.scss";
+
+import card from "../../../../public/svg/card.svg";
 export default function listPokedex(props) {
   const [pokemons, setPokemons] = useState([]);
   useEffect(() => {
     const fetch = async () => {
       const pokes = await getData();
+      console.log(pokes);
       setPokemons(pokes);
     };
 
@@ -14,11 +17,17 @@ export default function listPokedex(props) {
 
   const maped = pokemons.map((poke) => (
     <li key={poke.id}>
-      {poke.name}{" "}
-      <img
-        className="pokeList-pokeImg"
-        src={poke.img.sprites.other["official-artwork"].front_default}
-      />
+      <div className="btnContainer">
+        <div className="btn__card">
+          <div>{poke.type["move-damage-class"]}</div>
+
+          {poke.name}
+          <img
+            className="pokeList-pokeImg"
+            src={poke.img.sprites.other["official-artwork"].front_default}
+          />
+        </div>
+      </div>
     </li>
   ));
   return (

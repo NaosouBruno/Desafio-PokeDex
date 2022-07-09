@@ -14,6 +14,7 @@ async function getData() {
       id: key,
       name: nameData.results[key].name,
       img: pokesImgData,
+      type: pokesImgData,
     });
   }
 
