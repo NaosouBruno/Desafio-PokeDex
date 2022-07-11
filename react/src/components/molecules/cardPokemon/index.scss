@@ -24,6 +24,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
 
   &-pokeImg {
     width: 80px;
@@ -32,6 +34,10 @@
 
   &-pokeItem {
     margin: 0 10px 10px 0;
+
+    &:nth-child(even) {
+      margin: 0;
+    }
   }
 }
 .btnContainer {
@@ -72,4 +78,9 @@
     background-repeat: no-repeat;
     background-position: top 30px left 70px;
   }
+}
+
+.type-position {
+  display: flex;
+  flex-direction: column;
 }

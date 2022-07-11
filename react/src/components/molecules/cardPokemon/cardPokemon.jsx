@@ -18,9 +18,15 @@ export default function listPokedex(props) {
     <li key={poke.id} className="pokeList-pokeItem">
       <div className="btnContainer">
         <div className="btn__card">
-          <div>{poke.type["move-damage-class"]}</div>
+          <div className="type-position">
+            {poke.type.map((tipo) => (
+              <div key={tipo.type.name}>
+                <p>{tipo.type.name}</p>
+              </div>
+            ))}
+            <p>{poke.name} </p>
+          </div>
 
-          {poke.name}
           <img
             className="pokeList-pokeImg"
             src={poke.img.sprites.other["official-artwork"].front_default}
