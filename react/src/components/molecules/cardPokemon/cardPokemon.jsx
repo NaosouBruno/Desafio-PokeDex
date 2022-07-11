@@ -14,30 +14,65 @@ export default function listPokedex(props) {
     fetch();
   }, []);
 
-  const maped = pokemons.map((poke) => (
-    <li key={poke.id} className="pokeList-pokeItem">
-      <div className="btnContainer">
-        <div className="btn__card">
-          <div className="type-position">
+  const agoraVai = pokemons.map((poke) => (
+    <li className="containerPoke">
+      <section className="containerPoke-card" key={poke.id}>
+        <div className="containerPoke-pokeInfo">
+          <span className="containerPoke-pokeName">{poke.name}</span>
+          <span className="containerPoke-pokeId">#{poke.id}</span>
+        </div>
+        <div className="containerPoke-content">
+          <div>
             {poke.type.map((tipo) => (
-              <div key={tipo.type.name}>
-                <p>{tipo.type.name}</p>
+              <div className="containerPoke-type">
+                <div key={tipo.type.name} className="containerPoke-typeStyle">
+                  <span className="containerPoke-typeName">
+                    {tipo.type.name}
+                  </span>
+                </div>
               </div>
             ))}
-            <p>{poke.name} </p>
           </div>
-
           <img
-            className="pokeList-pokeImg"
+            className="containerPoke-pokeImg"
             src={poke.img.sprites.other["official-artwork"].front_default}
           />
         </div>
-      </div>
+      </section>
     </li>
   ));
+  /*  const maped = pokemons.map((poke) => (
+    <li key={poke.id} className="pokeList-pokeItem">
+      <div className="btnContainer">
+        <div className="btn__card">
+          <div className="header-info">
+            <div className="header-position">
+              <span className="header-name">{poke.name}</span>
+            </div>
+            {poke.type.map((tipo) => (
+              <div className="header-type">
+                <div key={tipo.type.name} className="header-typeText">
+                  {tipo.type.name}
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="">
+            <div className="poke-id">{poke.id}</div>
+
+            <img
+              className="pokeList-pokeImg"
+              src={poke.img.sprites.other["official-artwork"].front_default}
+            />
+          </div>
+        </div>
+      </div>
+    </li>
+  )); */
   return (
     <section className="container">
-      <ul className="pokeList">{maped}</ul>
+      {/* <ul className="pokeList">{maped}</ul> */}
+      <ul className="render">{agoraVai}</ul>
     </section>
   );
 }
