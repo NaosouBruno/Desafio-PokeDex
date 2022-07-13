@@ -10,7 +10,9 @@
   &-icon {
     cursor: pointer;
   }
-
+  &-pokeInfo {
+    display: flex;
+  }
   &-title {
     margin-left: 26px;
     font-size: 30px;

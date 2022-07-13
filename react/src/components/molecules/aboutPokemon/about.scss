@@ -1,4 +1,22 @@
 .about {
   width: 100%;
   background: #46a487;
+  &-pokeName {
+    width: 253px;
+    height: 38px;
+    font-family: "Circular Std";
+    font-size: 36px;
+    line-height: 46px;
+    color: #ffffff;
+  }
+  &-pokeId {
+    width: 59px;
+    height: 27px;
+
+    font-family: "Circular Std";
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #ffffff;
+  }
 }

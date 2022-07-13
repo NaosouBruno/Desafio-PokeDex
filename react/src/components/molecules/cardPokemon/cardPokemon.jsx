@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import getData from "../../../services/getData";
-
+import { Link } from "react-router-dom";
 import "./index.scss";
 
 export default function listPokedex() {
@@ -76,11 +76,12 @@ export default function listPokedex() {
               </div>
             ))}
           </div>
-
-          <img
-            className="containerPoke-pokeImg"
-            src={poke.data.sprites.other["official-artwork"].front_default}
-          />
+          <Link to="/about">
+            <img
+              className="containerPoke-pokeImg"
+              src={poke.data.sprites.other["official-artwork"].front_default}
+            />
+          </Link>
         </div>
       </section>
     </li>
