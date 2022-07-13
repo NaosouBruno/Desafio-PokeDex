@@ -12,7 +12,7 @@ export default function headerPokedex(props) {
       </div>
       <div className="header-pokeInfo">
         <h2 className={`header-title ${props.classTitle}`}>{props.title}</h2>
-        <h2 className={props.classId}>#{props.id}</h2>
+        <h2 className={props.classId}>{props.id}</h2>
       </div>
     </section>
   );
