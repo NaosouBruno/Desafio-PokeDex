@@ -67,3 +67,39 @@
     height: 70px;
   }
 }
+
+.pokeColor {
+  &--green {
+    background-color: #46a487;
+  }
+  &--red {
+    background-color: #fb6c6c;
+  }
+  &--blue {
+    background-color: #46c5d7;
+  }
+  &--yellow {
+    background-color: linear-gradient(
+      8.46deg,
+      #468da4 -0.58%,
+      #46d7ab 108.38%,
+      #46c5d7 108.38%
+    );
+  }
+  &--brown {
+    background-color: #b1736c;
+  }
+  &--purple {
+    background: linear-gradient(8.46deg, #46a487 -0.58%, #46d7ab 108.38%);
+  }
+  &--pink {
+    background-color: pink;
+  }
+  &--bug {
+    background-color: #a8b820;
+  }
+  &--yellow {
+    background: #ffdc7d
+      /* linear-gradient(8.46deg, #46a487 -0.58%, #46d7ab 108.38%) */;
+  }
+}

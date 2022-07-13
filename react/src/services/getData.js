@@ -1,7 +1,7 @@
-async function getData() {
+async function getData(offset, limit) {
   const baseUrl = "https://pokeapi.co/api/v2/pokemon/";
 
-  const getName = await fetch(baseUrl);
+  const getName = await fetch(`${baseUrl}?offset=${offset}&limit=${limit}`);
   const nameData = await getName.json();
 
   const pokes = [];
@@ -10,14 +10,17 @@ async function getData() {
     const pokesImg = await fetch(`${baseUrl}${nameData.results[key].name}`);
     const pokesImgData = await pokesImg.json();
 
+    const color = pokesImgData.species.url;
+
+    const colorFetch = await fetch(color);
+    const colorData = await colorFetch.json();
+
     pokes.push({
-      id: key,
-      name: nameData.results[key].name,
-      img: pokesImgData,
-      type: pokesImgData.types,
+      data: pokesImgData,
+      color: colorData.color.name,
     });
   }
-  console.log(pokes);
+
   return pokes;
 }
 
