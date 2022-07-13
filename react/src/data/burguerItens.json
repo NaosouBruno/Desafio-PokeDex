@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "title": "Favourite Pokemon",
+    "img": "/assets/img/heartIcon.png"
+  },
+  {
+    "id": 1,
+    "title": "All Type",
+    "img": "/assets/img/pokeIcon.png"
+  },
+  {
+    "id": 2,
+    "title": "All Gen",
+    "img": "/assets/img/pokeIcon.png"
+  },
+  {
+    "id": 3,
+    "title": "Search",
+    "img": "/assets/img/searchIcon.png"
+  }
+]

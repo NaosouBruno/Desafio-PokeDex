@@ -1,9 +1,12 @@
+import ListPokedex from "./components/organisms/listPokedex/listPokedex";
+import AboutPokemon from "./components/molecules/aboutPokemon/about";
 
-import Homescreen from "./components/organisms/homescreen/homeScreen";
 function App() {
   return (
     <div>
-      <Homescreen />
+      <ListPokedex />
+      {/*       <AboutPokemon />
+       */}
     </div>
   );
 }
