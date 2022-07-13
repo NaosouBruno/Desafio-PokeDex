@@ -13,10 +13,10 @@ export default function listPokedex() {
   const showBurguer = useSelector((state) => state.ui.burguerIsVisible);
   return (
     <section>
-      <HeaderPokedex leftImg={Back} hightImg={ListIcon} title={"Pokedex"} />
-      <CardPokemon />
       {showBurguer && <BurguerContent />}
       <BurguerMenu />
+      <HeaderPokedex leftImg={Back} hightImg={ListIcon} title={"Pokedex"} />
+      <CardPokemon />
     </section>
   );
 }

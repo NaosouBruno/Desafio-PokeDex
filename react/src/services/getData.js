@@ -1,7 +1,7 @@
-async function getData(offset, limit) {
+async function getData(offset) {
   const baseUrl = "https://pokeapi.co/api/v2/pokemon/";
 
-  const getName = await fetch(`${baseUrl}?offset=${offset}&limit=${limit}`);
+  const getName = await fetch(`${baseUrl}?offset=${offset}&limit=15`);
   const nameData = await getName.json();
 
   const pokes = [];

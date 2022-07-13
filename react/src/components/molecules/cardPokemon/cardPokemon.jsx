@@ -3,7 +3,7 @@ import getData from "../../../services/getData";
 
 import "./index.scss";
 
-export default function listPokedex(props) {
+export default function listPokedex() {
   const [pokemons, setPokemons] = useState([]);
   const [start, setStart] = useState(0);
   const [end, setEnd] = useState(15);
@@ -13,20 +13,26 @@ export default function listPokedex(props) {
   useEffect(() => {
     const fetch = async () => {
       let pokes;
-      if (end > 151) {
-        pokes = await getData(start, 151);
+      if (end === 165) {
+        pokes = await getData(start, end);
         setDataHasEnd(true);
       } else {
         pokes = await getData(start, end);
       }
 
       addObserver();
-      /*  setPokemons([...pokemons, ...pokes]); */
+
       setPokemons((prev) => {
-        return prev.concat(pokes);
+        if (end === 165) {
+          return prev.concat(pokes.slice(0, 1));
+        } else {
+          return prev.concat(pokes);
+        }
       });
 
       console.log(pokes);
+      console.log(start);
+      console.log(end);
       setIsLoading(false);
     };
 
@@ -51,7 +57,7 @@ export default function listPokedex(props) {
     observer.observe(document.querySelector("#observarAqui"));
   };
 
-  const agoraVai = pokemons.map((poke) => (
+  const maped = pokemons.map((poke) => (
     <li className="containerPoke" key={poke.data.id}>
       <section className={`containerPoke-card pokeColor--${poke.color}`}>
         <div className="containerPoke-pokeInfo">
@@ -82,7 +88,7 @@ export default function listPokedex(props) {
 
   return (
     <section className="container">
-      <ul className="render">{agoraVai}</ul>
+      <ul className="render">{maped}</ul>
       {!dataHasEnd && <button id="observarAqui">OPA</button>}
     </section>
   );

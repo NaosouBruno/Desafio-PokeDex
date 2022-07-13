@@ -5,6 +5,7 @@
   list-style-type: none;
 }
 .containerPoke {
+  position: relative;
   &-card {
     margin: 0 10px 10px 0;
     &:nth-child(even) {
