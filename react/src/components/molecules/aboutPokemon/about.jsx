@@ -64,29 +64,33 @@ export default function aboutPokemon() {
             <p className="about-speciesItems">Gender</p>
             <div className="about-genderMale">
               <img src={Male} />
-              <span>87.5%</span>
+              <span className="about-pokeInfo--gender">87.5%</span>
             </div>
             <div>
               <img src={Female} />
-              <span>12.5%</span>
+              <span className="about-pokeInfo--gender">12.5%</span>
             </div>
           </div>
           <div className="about-speciesGroup">
             <p className="about-speciesItems">Egg Groups</p>
-            <span>Monter</span>
+            <span className="about-pokeInfo">Monter</span>
           </div>
           <div className="about-speciesGroup">
             <p className="about-speciesItems">Egg Cycle</p>
-            <span>Grass</span>
+            <span className="about-pokeInfo">Grass</span>
           </div>
         </div>
 
         <div className="about-location">
           <h3 className="about-speciesTitle">Location</h3>
+          <img className="about-pokeLocal" src={Location} />
         </div>
         <div className="about-training">
           <h3 className="about-speciesTitle">Training</h3>
-          <img className="about-pokeLocal" src={Location} />
+          <div className="about-trainingInfo">
+            <p className="about-speciesItems">Base EXP</p>
+            <span className="about-pokeInfo">64</span>
+          </div>
         </div>
       </div>
     </section>

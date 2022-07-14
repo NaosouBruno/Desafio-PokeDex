@@ -142,6 +142,17 @@
   &-genderMale {
     margin-right: 13px;
   }
+  &-pokeInfo {
+    width: 194px;
+    height: 14px;
+    font-family: "Circular Std";
+    font-size: 14px;
+    line-height: 28px;
+    color: #303943;
+    &--gender {
+      margin-left: 13px;
+    }
+  }
   &-speciesItems {
     margin-left: 13px;
     width: 88px;
@@ -162,5 +173,9 @@
   }
   &-training {
     margin-left: 28px;
+  }
+  &-trainingInfo {
+    display: flex;
+    align-items: center;
   }
 }
