@@ -5,6 +5,7 @@ import Back from "/assets/img/backBranco.png";
 import Love from "/assets/img/love.png";
 import Male from "/assets/img/male.png";
 import Female from "/assets/img/female.png";
+import Location from "/assets/img/pokeLocal.png";
 import "./about.scss";
 export default function aboutPokemon() {
   return (
@@ -78,6 +79,14 @@ export default function aboutPokemon() {
             <p className="about-speciesItems">Egg Cycle</p>
             <span>Grass</span>
           </div>
+        </div>
+
+        <div className="about-location">
+          <h3 className="about-speciesTitle">Location</h3>
+        </div>
+        <div className="about-training">
+          <h3 className="about-speciesTitle">Training</h3>
+          <img className="about-pokeLocal" src={Location} />
         </div>
       </div>
     </section>
