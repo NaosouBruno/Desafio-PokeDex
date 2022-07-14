@@ -3,7 +3,8 @@ import Substract from "../../../../public/svg/BigSubstract";
 import BigBulba from "/assets/img/bigBulba.png";
 import Back from "/assets/img/backBranco.png";
 import Love from "/assets/img/love.png";
-
+import Male from "/assets/img/male.png";
+import Female from "/assets/img/female.png";
 import "./about.scss";
 export default function aboutPokemon() {
   return (
@@ -53,6 +54,29 @@ export default function aboutPokemon() {
           <div>
             <p className="about-personalTitles">Weight</p>
             <span className="about-pokePersonal">15.2 lbs(6.9kg)</span>
+          </div>
+        </div>
+
+        <div className="about-pokeSpecies">
+          <h3 className="about-speciesTitle">Breeding</h3>
+          <div className="about-speciesGroup">
+            <p className="about-speciesItems">Gender</p>
+            <div className="about-genderMale">
+              <img src={Male} />
+              <span>87.5%</span>
+            </div>
+            <div>
+              <img src={Female} />
+              <span>12.5%</span>
+            </div>
+          </div>
+          <div className="about-speciesGroup">
+            <p className="about-speciesItems">Egg Groups</p>
+            <span>Monter</span>
+          </div>
+          <div className="about-speciesGroup">
+            <p className="about-speciesItems">Egg Cycle</p>
+            <span>Grass</span>
           </div>
         </div>
       </div>
