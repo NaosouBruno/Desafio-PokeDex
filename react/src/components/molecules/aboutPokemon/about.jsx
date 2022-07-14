@@ -38,11 +38,22 @@ export default function aboutPokemon() {
             <span className="about-navItem">Moves</span>
           </div>
           <hr></hr>
-          <p className="poke-info">
+          <p className="about-info">
             Bulbasaur can be seen napping in bright sunlight. There is a seed on
             its back. By soaking up the sun's rays, the seed grows progressively
             larger.
           </p>
+        </div>
+
+        <div className="about-card">
+          <div>
+            <p className="about-personalTitles">Height</p>
+            <span className="about-pokePersonal">2'3.6" (0.70cm)</span>
+          </div>
+          <div>
+            <p className="about-personalTitles">Weight</p>
+            <span className="about-pokePersonal">15.2 lbs(6.9kg)</span>
+          </div>
         </div>
       </div>
     </section>
