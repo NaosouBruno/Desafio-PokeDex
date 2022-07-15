@@ -39,6 +39,10 @@ export default function listPokedex() {
     fetch();
   }, [start, end]);
 
+  /*  const getId = (event) => {
+    const id = event;
+    console.log(id);
+  }; */
   const addObserver = () => {
     /* DECLARA O OBSERVER */
     const observer = new IntersectionObserver((entries) => {
@@ -76,7 +80,7 @@ export default function listPokedex() {
               </div>
             ))}
           </div>
-          <Link to="/about">
+          <Link to={`/about/${poke.data.id}`}>
             <img
               className="containerPoke-pokeImg"
               src={poke.data.sprites.other["official-artwork"].front_default}

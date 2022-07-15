@@ -8,6 +8,7 @@
     font-size: 36px;
     line-height: 46px;
     color: #ffffff;
+    text-transform: capitalize;
   }
   &-pokeId {
     width: 59px;
@@ -18,9 +19,12 @@
     line-height: 23px;
     color: #ffffff;
   }
-  &-pokeType {
+  &-subInfo {
     display: flex;
     justify-content: space-between;
+  }
+  &-pokeType {
+    display: flex;
   }
   &-typeName {
     text-align: center;
@@ -51,6 +55,8 @@
     position: relative;
   }
   &-pokeSelf {
+    width: 234px;
+    height: 223px;
     position: absolute;
   }
 
@@ -95,17 +101,23 @@
     box-shadow: 0px 8px 23px rgba(0, 0, 0, 0.12);
     border-radius: 12px;
   }
+  &-personalContainer {
+    display: flex;
+    padding-left: 24px;
+    &:nth-child(even) {
+      padding-left: 45px;
+      border: 1px solid;
+    }
+  }
+
   &-personalTitles {
     margin-bottom: 11px;
     width: 54px;
     height: 14px;
-
     font-family: "Circular Std";
     font-size: 14px;
     line-height: 28px;
-
     color: #303943;
-
     opacity: 0.4;
   }
   &-pokePersonal {
@@ -120,7 +132,6 @@
   &-pokeSpecies {
     display: flex;
     flex-direction: column;
-    margin-left: 28px;
   }
   &-speciesTitle {
     margin-top: 31px;
@@ -144,15 +155,12 @@
     width: 194px;
     height: 14px;
     font-family: "Circular Std";
+    text-transform: capitalize;
     font-size: 14px;
     line-height: 28px;
     color: #303943;
-    &--gender {
-      margin-left: 13px;
-    }
   }
   &-speciesItems {
-    margin-left: 13px;
     width: 88px;
     height: 14px;
     font-family: "Circular Std";
@@ -162,17 +170,12 @@
     opacity: 0.6;
   }
 
-  &-location {
-    margin-left: 28px;
-  }
   &-pokeLocal {
     width: 334px;
     height: 149px;
     margin-top: 18px;
   }
-  &-training {
-    margin-left: 28px;
-  }
+
   &-trainingInfo {
     display: flex;
     align-items: center;

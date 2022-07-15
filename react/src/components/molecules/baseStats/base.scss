@@ -1,0 +1,38 @@
+.base {
+  display: flex;
+  flex-direction: column;
+  &-container {
+    display: flex;
+    align-items: center;
+  }
+  &-title {
+    width: 87px;
+
+    font-family: "Circular Std";
+    font-size: 14px;
+    line-height: 28px;
+    color: #303943;
+    opacity: 0.6;
+  }
+  &-powerQuant {
+    width: 30px;
+    font-family: "Circular Std";
+    font-size: 14px;
+    line-height: 28px;
+    color: #303943;
+  }
+  &-bar {
+    width: 200px;
+    height: 3px;
+    background: #f4f5f4;
+    opacity: 0.9;
+    border-radius: 110px;
+    margin: 0 auto;
+  }
+  &-powerBar {
+    width: 103px;
+    height: 3px;
+    background: #fb6c6c;
+    border-radius: 110px;
+  }
+}

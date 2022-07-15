@@ -20,7 +20,7 @@ export default function Ellipse() {
         cy="-6"
         r="21"
         stroke="white"
-        stroke-width="20"
+        strokeWidth="20"
       />
     </svg>
   );
