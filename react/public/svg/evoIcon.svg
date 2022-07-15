@@ -1,5 +1,4 @@
-export default function Ellipse() {
-  return (
+
     <svg
       width="83"
       height="83"
@@ -15,5 +14,4 @@ export default function Ellipse() {
         fill="#303943"
       />
     </svg>
-  );
-}
+  
