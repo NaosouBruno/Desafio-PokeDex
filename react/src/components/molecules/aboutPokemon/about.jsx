@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import getPokemon from "../../../services/getPokemon";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 import HeaderPokedex from "../pokedexHeader/header";
 import Substract from "../../../../public/svg/BigSubstract";
@@ -10,7 +10,7 @@ import Love from "/assets/img/love.png";
 import Male from "/assets/img/male.png";
 import Female from "/assets/img/Female.png";
 import Location from "/assets/img/pokeLocal.png";
-import BaseStats from "../baseStats/base";
+
 import "./about.scss";
 export default function aboutPokemon() {
   const [pokemon, setPokemon] = useState([]);
@@ -20,7 +20,7 @@ export default function aboutPokemon() {
     const fetch = async () => {
       const pokes = await getPokemon(id);
       setPokemon(pokes);
-      console.log(pokes[0]);
+      console.log(pokes[0].data.id);
     };
     fetch();
   }, []);
@@ -123,25 +123,29 @@ export default function aboutPokemon() {
       </div>
     </div>
   ));
+
+  const navMaped = pokemon.map((poke) => (
+    <div className="about-nav" key={poke.data.id}>
+      <span className="about-navItem">About</span>
+      <Link to={`/baseStats/${poke.data.id}`}>
+        <span className="about-navItem">Base Stats</span>
+      </Link>
+      <Link to={"/evolution"}>
+        <span className="about-navItem">Evolution</span>
+      </Link>
+
+      <span className="about-navItem">Moves</span>
+    </div>
+  ));
   return (
     <section className="about">
       {pokeHeader}
-
       <div className="about-footer">
         <div className="about-footerContainer">
-          <div className="about-nav">
-            <span className="about-navItem">About</span>
-            <span className="about-navItem">Base Stats</span>
-            <span className="about-navItem">Evolution</span>
-            <span className="about-navItem">Moves</span>
-          </div>
+          {navMaped}
           <hr></hr>
-
-          {/* <BaseStats /> */}
-
           {pokeFooter}
           {pokeInfo}
-
           <div className="about-location">
             <h3 className="about-speciesTitle">Location</h3>
             <img className="about-pokeLocal" src={Location} />
