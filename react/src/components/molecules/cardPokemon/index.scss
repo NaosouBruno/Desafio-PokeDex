@@ -3,8 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   list-style-type: none;
-  /*   align-items: center;
-    justify-content: center; */
+  justify-content: center;
 }
 .containerPoke {
   position: relative;
@@ -114,5 +113,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  &-nav {
+    display: block;
+    @media (min-width: 768px) {
+      display: flex;
+    }
   }
 }

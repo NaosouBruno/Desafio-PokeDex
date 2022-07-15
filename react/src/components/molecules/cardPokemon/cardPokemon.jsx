@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import getData from "../../../services/getData";
-
+import Nav from "../navigation/nav";
 import { Link } from "react-router-dom";
 import "./index.scss";
 
@@ -94,6 +94,10 @@ export default function listPokedex() {
 
   return (
     <section className="container">
+      <div className="container-nav">
+        {" "}
+        <Nav />
+      </div>
       <ul className="render">{maped}</ul>
       {!dataHasEnd && (
         <span id="observarAqui" className="container-loading">

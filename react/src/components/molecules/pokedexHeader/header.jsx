@@ -11,10 +11,10 @@ export default function headerPokedex(props) {
         <img className="header-icon" src={props.hightImg} />
       </div>
       <div className="header-pokeInfo">
+        <h2 className={`header-title ${props.classTitle}`}>{props.title}</h2>
         <h2 className={props.classId}>{props.id}</h2>
       </div>
-      <h2 className={`header-title ${props.classTitle}`}>{props.title}</h2>
-      <Nav />
+      {/*  <Nav /> */}
     </section>
   );
 }
