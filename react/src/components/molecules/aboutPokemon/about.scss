@@ -25,12 +25,18 @@
   }
   &-pokeType {
     display: flex;
+    @media screen {
+      @media (min-width: 768px) {
+        margin-left: 20px;
+      }
+    }
   }
   &-typeName {
     text-align: center;
     min-width: 43px;
     background: #ffffff4a;
     border-radius: 38px;
+    text-transform: capitalize;
     font-family: "Circular Std";
     font-size: 12px;
     line-height: 28px;
@@ -70,6 +76,14 @@
   }
   &-footerContainer {
     padding: 46px 27px;
+  }
+  &-footerGroup {
+    @media screen {
+      @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+      }
+    }
   }
   &-nav {
     display: flex;
@@ -176,6 +190,13 @@
     margin-top: 18px;
   }
 
+  &-training {
+    @media screen {
+      @media (min-width: 768px) {
+        margin-left: 25px;
+      }
+    }
+  }
   &-trainingInfo {
     display: flex;
     align-items: center;

@@ -73,19 +73,21 @@ export default function aboutPokemon() {
         on its back. By soaking up the sun's rays, the seed grows progressively
         larger.
       </p>
-      <div className="about-card">
-        <div className="about-position">
-          <p className="about-personalTitles">Height</p>
-          <span className="about-pokePersonal">
-            {convertHeight(poke.data.height)}
-          </span>
-        </div>
-        <div className="about-position">
-          <p className="about-personalTitles">Weight</p>
-          <span className="about-pokePersonal">
-            {convertWeight(poke.data.weight)}
-          </span>
-        </div>
+    </div>
+  ));
+  const pokeCard = pokemon.map((poke) => (
+    <div className="about-card">
+      <div className="about-position">
+        <p className="about-personalTitles">Height</p>
+        <span className="about-pokePersonal">
+          {convertHeight(poke.data.height)}
+        </span>
+      </div>
+      <div className="about-position">
+        <p className="about-personalTitles">Weight</p>
+        <span className="about-pokePersonal">
+          {convertWeight(poke.data.weight)}
+        </span>
       </div>
     </div>
   ));
@@ -145,12 +147,20 @@ export default function aboutPokemon() {
           {navMaped}
           <hr></hr>
           {pokeFooter}
-          {pokeInfo}
-          <div className="about-location">
-            <h3 className="about-speciesTitle">Location</h3>
-            <img className="about-pokeLocal" src={Location} />
+
+          <div className="about-footerGroup">
+            {pokeInfo}
+            {pokeCard}
           </div>
-          {mapedExp}
+
+          <div className="about-footerGroup">
+            <div className="about-location">
+              <h3 className="about-speciesTitle">Location</h3>
+              <img className="about-pokeLocal" src={Location} />
+            </div>
+
+            {mapedExp}
+          </div>
         </div>
       </div>
     </section>

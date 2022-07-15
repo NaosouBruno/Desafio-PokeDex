@@ -3,9 +3,14 @@
   flex-direction: row;
   flex-wrap: wrap;
   list-style-type: none;
+  /*   align-items: center;
+    justify-content: center; */
 }
 .containerPoke {
   position: relative;
+  @media (min-width: 768px) {
+    margin-left: 20px;
+  }
   &-card {
     margin: 0 10px 10px 0;
     &:nth-child(even) {
@@ -103,5 +108,11 @@
   &--yellow {
     background: #ffdc7d
       /* linear-gradient(8.46deg, #46a487 -0.58%, #46d7ab 108.38%) */;
+  }
+
+  &-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
