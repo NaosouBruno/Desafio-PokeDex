@@ -16,5 +16,9 @@
     font-size: 30px;
     line-height: 38px;
     font-family: $circular;
+    @media (min-width: 768px){
+      text-align: center;
+      font-size: 55px;
+  }
   }
 }

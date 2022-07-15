@@ -17,6 +17,7 @@
   {
     "id": 3,
     "title": "Search",
-    "img": "/assets/img/searchIcon.png"
+    "img": "public/assets/img/searchIcon.png",
+    "href": "./components/organisms/homescreen/homeScreen.jsx"
   }
 ]

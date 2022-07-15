@@ -1,3 +1,4 @@
+import Nav from "../navegation/nav";
 import "./header.scss";
 export default function headerPokedex(props) {
   return (
@@ -7,6 +8,7 @@ export default function headerPokedex(props) {
         <img className="header-icon" src={props.hightImg} />
       </div>
       <h2 className="header-title">{props.title}</h2>
+      <Nav />
     </section>
   );
 }
