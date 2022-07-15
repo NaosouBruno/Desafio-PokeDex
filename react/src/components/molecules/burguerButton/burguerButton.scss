@@ -1,0 +1,20 @@
+.burguer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 39px;
+  position: fixed;
+  top: 845px;
+  left: 357px;
+  @media (min-width: 768px) {
+    display: none;
+  }
+  &-container {
+    width: 45px;
+    height: 45px;
+    background: #6c79db;
+    box-shadow: 0px 11px 35px rgba(44, 52, 114, 0.5);
+    border-radius: 80px;
+    border: none;
+    cursor: pointer;
+  }
+}

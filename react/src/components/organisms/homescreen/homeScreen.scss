@@ -1,0 +1,18 @@
+.home {
+  &__title {
+    position: absolute;
+    font-size: 30px;
+    padding-left: 23px;
+    top: 117px;
+    @media (min-width: 768px) {
+      text-align: center;
+    }
+  }
+  &__containerIcon {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &-icon {
+    position: relative;
+  }
+}

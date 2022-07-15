@@ -1,0 +1,65 @@
+.btnContainer{
+    padding: 7px 0 0 5px;
+
+}
+.btnDirection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 42px;
+    
+}
+.btn{
+    width: 160px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    cursor: pointer;
+
+    &--green {
+        background-color: #46A487;
+        box-shadow: 0px 10px 13px -7px #46A487, 5px 5px 15px 5px rgba(70,164,135,0);
+    }
+    &--red {
+        background-color: #FC7F63;
+        box-shadow: 0px 10px 13px -7px #FC7F63, 5px 5px 15px 5px rgba(70,164,135,0);
+    }
+    &--blue {
+        background-color: #4676A4;
+        box-shadow: 0px 10px 13px -7px #4676A4, 5px 5px 15px 5px rgba(70,164,135,0);
+    }
+    &--yellow {
+        background-color: #e4c528;
+        box-shadow: 0px 10px 13px -7px #e4c528, 5px 5px 15px 5px rgba(70,164,135,0);
+    }
+    &--purple {
+        background-color: #724e9b;
+        box-shadow: 0px 10px 13px -7px #724e9b, 5px 5px 15px 5px rgba(70,164,135,0);
+    }
+    &--brown {
+        background-color: #B1736C;
+        box-shadow: 0px 10px 13px -7px #B1736C, 5px 5px 15px 5px rgba(70,164,135,0);
+    }
+    &__text {
+        color: #FFFFFF;
+        font-weight: 500;
+        position: absolute;
+        padding-left: 16px;
+    }
+    &__img{
+        opacity: 0.4;
+    }
+    &__card{
+        width: 155px;
+        height: 110px;
+        background-color:#46A487;
+        border-radius: 15px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        -webkit-box-shadow: 0px 10px 13px -7px rgb(146, 146, 146), 5px 5px 15px 5px rgba(79, 183, 150, 0); 
+        box-shadow: 0px 10px 13px -7px rgb(146, 146, 146), 5px 5px 15px 5px rgba(79, 184, 150, 0);
+    }
+}

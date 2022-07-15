@@ -1,0 +1,40 @@
+.evolution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-title {
+    width: 194px;
+    height: 14px;
+    font-family: "Circular Std";
+    font-size: 16px;
+    line-height: 28px;
+    color: #303943;
+  }
+  &-container {
+    display: flex;
+  }
+  &-faseOne {
+    display: flex;
+    align-items: center;
+  }
+  &-pokeIcon {
+    position: relative;
+  }
+  &-pokeSelf {
+    position: absolute;
+  }
+  &-pokeLevel {
+    width: 43px;
+    height: 17px;
+    font-family: "Circular Std";
+    font-size: 12px;
+    line-height: 24px;
+    color: #303943;
+  }
+  &-containerLevel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 48px 70px 47px;
+  }
+}

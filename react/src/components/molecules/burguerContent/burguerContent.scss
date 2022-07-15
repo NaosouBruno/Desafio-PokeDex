@@ -1,0 +1,19 @@
+.burguerContent {
+  background: #000000;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  &-contentItem {
+    margin: 10px;
+  }
+  &-buttonContent {
+    background: #ffffff;
+    border-radius: 33px;
+    border: 1px solid #fff;
+  }
+}

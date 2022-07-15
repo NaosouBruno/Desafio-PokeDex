@@ -1,0 +1,27 @@
+@use "/public/styles/variables" as *;
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 30px 9px;
+
+  &-icon {
+    cursor: pointer;
+  }
+  &-pokeInfo {
+    display: flex;
+    align-items: center;
+  }
+  &-title {
+    margin-left: 26px;
+    font-size: 30px;
+    line-height: 38px;
+    font-family: $circular;
+    @media (min-width: 768px) {
+      text-align: center;
+
+      font-size: 55px;
+    }
+  }
+}
