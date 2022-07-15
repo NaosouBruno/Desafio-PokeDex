@@ -108,6 +108,12 @@
     background: #ffdc7d
       /* linear-gradient(8.46deg, #46a487 -0.58%, #46d7ab 108.38%) */;
   }
+  &--white {
+    background-color: #ebe3e3;
+  }
+  &--gray {
+    background-color: gray;
+  }
 
   &-loading {
     display: flex;
