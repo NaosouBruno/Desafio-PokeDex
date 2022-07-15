@@ -1,0 +1,21 @@
+.nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #2ac0843b;
+    border-radius: 50px;
+    color: rgb(88, 88, 88);
+    &__content {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__list {
+      cursor: pointer;
+    }
+  }
+}

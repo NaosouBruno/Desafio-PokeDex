@@ -3,9 +3,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   list-style-type: none;
+  justify-content: center;
 }
 .containerPoke {
   position: relative;
+  @media (min-width: 768px) {
+    margin-left: 20px;
+  }
   &-card {
     margin: 0 10px 10px 0;
     &:nth-child(even) {
@@ -59,6 +63,7 @@
 
     border-radius: 38px;
   }
+
   &-typeName {
     font-size: 8px;
     line-height: 28px;
@@ -102,5 +107,24 @@
   &--yellow {
     background: #ffdc7d
       /* linear-gradient(8.46deg, #46a487 -0.58%, #46d7ab 108.38%) */;
+  }
+  &--white {
+    background-color: #ebe3e3;
+  }
+  &--gray {
+    background-color: gray;
+  }
+
+  &-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-nav {
+    display: block;
+    @media (min-width: 768px) {
+      display: flex;
+    }
   }
 }
